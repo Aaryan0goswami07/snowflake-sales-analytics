@@ -82,6 +82,16 @@ Database = the building. Schema = a floor in the building. Tables live on a floo
 A stage is a loading zone — files sit here before being loaded into tables. This project uses direct `INSERT` statements for simplicity, but in production you'd upload a CSV to a stage then use `COPY INTO`.
 
 ---
+## Cortex AI exploration
+
+Alongside the manual SQL queries, I used Snowflake Cortex Code
+to query the data in natural language.
+
+Example prompt: "Show me top 5 products by revenue from the sales table"
+
+Cortex instantly queried the schema and returned a ranked table —
+no SQL written. This is what modern data workflows look like:
+natural language → SQL → business insight in seconds.
 
 ## What I learned
 
